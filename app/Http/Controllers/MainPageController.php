@@ -6,7 +6,7 @@ use App\Models\News as Model;
 use App\Repositories\NewsRepository;
 use Illuminate\Http\Request;
 
-class MainRestController extends Controller
+class MainPageController extends Controller
 {
     private $newsRepository;
 
@@ -55,7 +55,7 @@ class MainRestController extends Controller
      */
     public function show($id)
     {
-        $item = $this->newsRepository->getEdit($id);
+        $item = $this->newsRepository->getNewsItem($id);
         return view('main.show', compact('item'));
     }
 

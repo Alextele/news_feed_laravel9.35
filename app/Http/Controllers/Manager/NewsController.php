@@ -83,7 +83,7 @@ class NewsController extends BaseController
      */
     public function edit($id)
     {
-        $item = $this->newsRepository->getEdit($id);
+        $item = $this->newsRepository->getNewsItem($id);
         if (empty($item)) {
             abort(404);
         }
@@ -102,7 +102,7 @@ class NewsController extends BaseController
      */
     public function update(NewsUpdateRequest $request, $id)
     {
-        $item = $this->newsRepository->getEdit($id);
+        $item = $this->newsRepository->getNewsItem($id);
 
         if (empty($item)){
             return back()

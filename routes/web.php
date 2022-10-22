@@ -12,11 +12,11 @@
 |
 */
 
-Route::resource('/', 'App\Http\Controllers\MainRestController')
+Route::resource('/', 'App\Http\Controllers\MainPageController')
         ->names('main')
         ->only('index');
 
-Route::resource('list', 'App\Http\Controllers\MainRestController')
+Route::resource('list', 'App\Http\Controllers\MainPageController')
         ->names('main')
         ->only('show');
 

@@ -1,5 +1,5 @@
 
-  GET|HEAD        / .................................................................................................................................... main.index › MainRestController@index
+  GET|HEAD        / .................................................................................................................................... main.index › MainPageController@index
   GET|HEAD        _debugbar/assets/javascript .................................................................................... debugbar.assets.js › Barryvdh\Debugbar › AssetController@js
   GET|HEAD        _debugbar/assets/stylesheets ................................................................................. debugbar.assets.css › Barryvdh\Debugbar › AssetController@css
   DELETE          _debugbar/cache/{key}/{tags?} ........................................................................... debugbar.cache.delete › Barryvdh\Debugbar › CacheController@delete
@@ -9,7 +9,7 @@
   GET|HEAD        _ignition/health-check ............................................................................... ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
   POST            _ignition/update-config ............................................................................ ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
   GET|HEAD        api/user ................................................................................................................................................................... 
-  GET|HEAD        list/{list} ............................................................................................................................ main.show › MainRestController@show
+  GET|HEAD        list/{list} ............................................................................................................................ main.show › MainPageController@show
   GET|HEAD        manager ....................................................................................................................... manager.index › Manager\NewsController@index
   POST            manager ....................................................................................................................... manager.store › Manager\NewsController@store
   GET|HEAD        manager/create .............................................................................................................. manager.create › Manager\NewsController@create

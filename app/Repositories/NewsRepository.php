@@ -52,7 +52,7 @@ class NewsRepository extends CoreRepository
     }
 
 
-    public function getEdit($id)
+    public function getNewsItem($id)
     {
         return $this->startConditions()->find($id);
     }
